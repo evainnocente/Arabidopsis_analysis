@@ -8,5 +8,7 @@ Nisha Puthiyedth, Farshad Zeinalinesaz, Dongdong Hou, Yue Zhang, Wenjun Lin, Yan
 
 ### Software versions:
 R: 4.5.1 
+
 Python: 3.14.0
+
 PLINK: 1.9.0-b.7.11
