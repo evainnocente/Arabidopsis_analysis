@@ -89,14 +89,13 @@ awk '{gsub(/nan/, "-9", $3)}1' phenotypes.txt > phenotypes_edited.txt
 awk '{gsub(/1.0/, "2", $3)}1' phenotypes_edited.txt > phenotypes_edited_case.txt
 awk '{gsub(/0.0/, "1", $3)}1' phenotypes_edited_case.txt > phenotypes_edited_cc.txt
 
-# PLINK association analysis
-
-plink --file genotype --pheno phenotypes_edited_cc.txt --assoc --maf 0.05 --allow-no-sex --out genotypes_assoc
+# using the adjust flag computes a few different multiple test corrections
+plink --file genotype --pheno phenotypes_edited_cc.txt --assoc --maf 0.05 --adjust --allow-no-sex --out genotypes_assoc
 
 # outputting the top 20 SNPs (lowest p-values)
 
-sort -k9g genotypes_assoc.assoc
-head -n20 sorted_genotypes_assoc.assoc > plink_Emco5_top_20_snps.txt
+sort -k9g genotypes_assoc.assoc.adjusted > sorted_adjusted.txt
+head -n20 sorted_adjusted.txt > plink_Emco5_top_20_snps.txt
 
 # Now run python script and install required packages
 
