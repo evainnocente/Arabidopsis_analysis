@@ -2,6 +2,8 @@
 
 This project adapted code from the paper "Leveraging LASSO-based methodologies for enhanced SNP analysis in plant genomes" by Puthiyedth et al., 2025. This paper compared two methods for identifiying SNPs, Biglasso and PLINK.
 
+This project was completed as part of the Topics in Bioinformatics course at the University of Guelph's Masters of Bioinformatics program.
+
 
 ### Citation:
 Nisha Puthiyedth, Farshad Zeinalinesaz, Dongdong Hou, Yue Zhang, Wenjun Lin, Yan Yan, Leveraging LASSO-based methodologies for enhanced SNP analysis in plant genomes, Bioinformatics Advances, Volume 5, Issue 1, 2025, vbaf014, https://doi.org/10.1093/bioadv/vbaf014 
